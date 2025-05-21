@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
-import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { Brightness4, Brightness7, NightlightRound } from "@mui/icons-material";
+
 
 
 export default function Portfolio() {
@@ -49,11 +50,9 @@ export default function Portfolio() {
         {/* Toggle */}
         <div className="flex justify-end">
           <Button
-            variant="contained"
             startIcon={darkMode ? <Brightness7 /> : <Brightness4 />}
             onClick={() => setDarkMode(!darkMode)}
           >
-            {darkMode ? "Light Mode" : "Dark Mode"}
           </Button>
         </div>
 

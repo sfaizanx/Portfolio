@@ -1,10 +1,13 @@
 import './App.css';
-import Portfolio from './Pages/portfolio';
+import Portfolio_Main from './Pages/Portfolio_Main';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function App() {
   return (
     <div className="App">
-      <Portfolio/>
+      <Portfolio_Main />
+      <ToastContainer theme='colored'/>
     </div>
   );
 }

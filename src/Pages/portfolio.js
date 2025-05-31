@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
-import { Brightness4, Brightness7, NightlightRound } from "@mui/icons-material";
+import { Brightness4, Brightness7} from "@mui/icons-material";
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(true);

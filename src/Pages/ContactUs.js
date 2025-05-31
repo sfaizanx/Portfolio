@@ -35,7 +35,7 @@ const ContactForm = () => {
 
 
   return (
-    <div className="grid md:grid-cols-2 xs:grid-cols-1 gap-4 px-10 py-5 justify-center items-center">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 px-4 sm:px-6 md:px-10 py-5 justify-center items-center">
     <Box
     component="form"
       ref={form}
@@ -134,7 +134,7 @@ const ContactForm = () => {
 
     <Box
       sx={{
-        minWidth: 400,
+        maxWidth: 400,
         mx: 'auto',
         mt: 8,
         p: 4,
@@ -168,7 +168,7 @@ const ContactForm = () => {
             <Card
         className='dark:text-white'
           sx={{
-            p: 2,
+            p: 3,
             borderRadius: 2,
             backdropFilter: 'blur(4px)',
             backgroundColor: 'rgba(255, 255, 255, 0.03)',
@@ -179,7 +179,7 @@ const ContactForm = () => {
           <Card
         className='dark:text-white'
           sx={{
-            p: 2,
+            p: 3,
             borderRadius: 2,
             backdropFilter: 'blur(4px)',
             backgroundColor: 'rgba(255, 255, 255, 0.03)',
@@ -194,7 +194,7 @@ const ContactForm = () => {
           <Card
         className='dark:text-white'
           sx={{
-            p: 2,
+            p: 3,
             borderRadius: 2,
             backdropFilter: 'blur(4px)',
             backgroundColor: 'rgba(255, 255, 255, 0.03)',
@@ -208,7 +208,7 @@ const ContactForm = () => {
           <Card
         className='dark:text-white'
           sx={{
-            p: 2,
+            p: 3,
             borderRadius: 2,
             backdropFilter: 'blur(4px)',
             backgroundColor: 'rgba(255, 255, 255, 0.03)',

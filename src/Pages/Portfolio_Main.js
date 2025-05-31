@@ -180,7 +180,7 @@ const Portfolio_Main = () => {
 
         {/* Contact Us */}
         <Container fluid className="mx-10">
-          <div className="Contact-Us justify-center items-center mx-10 mt-20">
+          <div className="Contact-Us justify-center items-center mx-5 mt-20">
             <h2 className="text-3xl font-bold text-center">Contact Us</h2>
             <p className="text-lg mb-6 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
               Have a project in mind? Let's get in touch!
@@ -231,7 +231,7 @@ const Portfolio_Main = () => {
             }}
             className="fixed bottom-4 right-4 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition duration-700 z-50"
           >
-            <KeyboardArrowUp className="w-6 h-6 xs:w-3 h-3"/>
+            <KeyboardArrowUp className="w-6 h-6"/>
           </a>
         )}
       </div>

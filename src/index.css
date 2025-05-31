@@ -8,4 +8,5 @@ html {
 
 body {
   @apply transition-colors duration-300 ease-in-out;
+  overflow-x: hidden;
 }

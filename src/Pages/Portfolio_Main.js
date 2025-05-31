@@ -124,7 +124,7 @@ const Portfolio_Main = () => {
           {/* Left side: About Text */}
           <div className="text-center mx-20">
             <h3 className="text-3xl font-bold text-start">Hello,I'm</h3>
-            <p className="text-4xl font-extrabold mb-5 text-gray-800 text-blue-400 text-start">
+            <p className="text-4xl font-extrabold mb-5 text-blue-400 text-start">
               Faizan Sayyed
             </p>
             <p
@@ -231,7 +231,7 @@ const Portfolio_Main = () => {
             }}
             className="fixed bottom-4 right-4 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition duration-700 z-50"
           >
-            <KeyboardArrowUp className="w-6 h-6" />
+            <KeyboardArrowUp className="w-6 h-6 xs:w-3 h-3"/>
           </a>
         )}
       </div>

@@ -56,6 +56,7 @@ export default function Certificates() {
     sx={{
         width: '100%',
         maxWidth: 800,
+        minWidth : isSmallScreen ? 250 : 800,
         height: 'auto',
         mx: 'auto', // centers horizontally
         px: 2, // padding for mobile sides

@@ -42,6 +42,7 @@ export default function Portfolio() {
     ]);
   }, []);
 
+
   return (
     <div className={`${darkMode ? "dark" : ""} transition-colors duration-700`}>
       <div className="min-h-screen bg-gradient-to-tr from-gray-100 via-gray-200 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-100 px-6 py-10">
@@ -236,6 +237,7 @@ export default function Portfolio() {
             ↑
           </a>
         )}
+
       </div>
     </div>
   );

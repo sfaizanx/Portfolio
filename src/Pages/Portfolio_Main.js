@@ -4,8 +4,6 @@ import { Button, Container, IconButton } from "@mui/material";
 import aboutMe from "../Assests/img/Animation - 1748525028707.gif";
 import {
   Bedtime,
-  Brightness4,
-  Brightness7,
   GitHub,
   Instagram,
   KeyboardArrowUp,
@@ -20,13 +18,14 @@ const Portfolio_Main = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [showTopBtn, setShowTopBtn] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
+
+  // useEffect(() => {
+  //   if (darkMode) {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // }, [darkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +40,10 @@ const Portfolio_Main = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    
+
   return (
-    <div className={`${darkMode ? "dark" : ""} transition-colors duration-700`}>
+    <div className={`${darkMode ? "dark" : ""} transition-colors duration-800`}>
       <div className="bg-white dark:bg-gray-900 text-black dark:text-white">
         {/* Toggle */}
         <div className="flex justify-end p-10">
@@ -212,6 +213,8 @@ const Portfolio_Main = () => {
             </div>
           </div>
         </Container>
+
+
         {/* Footer */}
         <footer className="bg-gray-800 text-white py-6 mt-20">
           <Container>

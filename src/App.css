@@ -1,0 +1,24 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url('D:\PORTFOLIO_02\src\assets\img\art-2907939.png');
+  background-repeat: no-repeat;
+  background-size: 350px;
+  /* makes image cover the entire area without distortion */
+  background-position: center;
+  /* centers the image */
+  background-attachment: fixed;
+  /* keeps background fixed while scrolling (optional) */
+}
+
+
+/* Title page -> water animation */
+.letter {
+  display: inline-block;
+  transition: transform 0.3s;
+}

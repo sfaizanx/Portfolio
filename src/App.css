@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url('D:\PORTFOLIO_02\src\assets\img\art-2907939.png');
+  background-image: url('/public/art-2907939.png');
   background-repeat: no-repeat;
   background-size: 350px;
   /* makes image cover the entire area without distortion */

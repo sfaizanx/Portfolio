@@ -59,7 +59,7 @@ const Title = () => {
             fontSize="180"
             fontWeight="900"
             fill="none"
-            stroke="black"
+            stroke="white"
             strokeWidth="3"
           >
             FAIZAN
@@ -70,8 +70,12 @@ const Title = () => {
       {/* Floating Wave Texts */}
       <div
         ref={waveRef1}
-        className="font-extrabold tracking-widest flex justify-center flex-wrap 
-        text-3xl sm:text-5xl md:text-3xl lg:text-4xl xl:text-5xl mt-6"
+        className="text-white font-extrabold tracking-widest flex justify-center flex-wrap 
+  text-3xl sm:text-5xl md:text-3xl lg:text-4xl xl:text-5xl mt-6"
+        style={{
+          WebkitTextStroke: "1.5px black",
+          color: "white",
+        }}
       >
         {"FULL STACK".split("").map((ch, i) => (
           <span key={i} className="letter inline-block">
@@ -82,8 +86,12 @@ const Title = () => {
 
       <div
         ref={waveRef2}
-        className="font-extrabold flex justify-center flex-wrap 
-        text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-3"
+        className="text-white font-extrabold flex justify-center flex-wrap 
+  text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-3"
+        style={{
+          WebkitTextStroke: "1.5px black",
+          color: "white",
+        }}
       >
         {"DEVELOPER".split("").map((ch, i) => (
           <span key={i} className="letter inline-block">

@@ -61,10 +61,10 @@ const Acheivements = () => {
           <div
             key={idx}
             className="
-          border border-gray-300 rounded-2xl 
-          bg-white/50 backdrop-blur-sm
+          border border-gray-600 rounded-2xl 
+          bg-white backdrop-blur-sm
           transition-all duration-500 ease-in-out 
-          hover:shadow-2xl hover:scale-[1.03] hover:bg-white/70
+          hover:shadow-2xl hover:scale-[1.03]
           p-6 sm:p-8
           flex flex-col justify-center items-center
         "

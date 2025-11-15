@@ -11,12 +11,18 @@ const Contact = () => {
   <Header title="LET'S BUILD" />
 
   {/* Main Heading */}
-  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mt-4">
+  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mt-4" style={{
+          WebkitTextStroke: "1px white",
+          color: "black",
+        }}>
     SOMETHING AMAZING
   </div>
 
   {/* Subheading / Description */}
-  <div className="text-xs sm:text-lg md:text-xl mt-3 font-black tracking-tight max-w-3xl">
+  <div className="text-xs sm:text-lg md:text-xl mt-3 font-black tracking-tight max-w-3xl" style={{
+          WebkitTextStroke: "0.5px white",
+          color: "black",
+        }}>
     Ready to bring your ideas to life? Let's collaborate and create <br />
     extraordinary digital experiences together.
   </div>

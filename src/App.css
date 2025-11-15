@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url('/public/art-2907939.png');
+  background-image: url('/faizan_trail.jpg');
   background-repeat: no-repeat;
   background-size: 350px;
   /* makes image cover the entire area without distortion */
@@ -14,6 +14,7 @@ html {
   /* centers the image */
   background-attachment: fixed;
   /* keeps background fixed while scrolling (optional) */
+  background-size: cover;
 }
 
 

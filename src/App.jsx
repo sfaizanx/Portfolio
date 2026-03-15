@@ -1,64 +1,28 @@
-import { useEffect } from 'react'
-import './App.css'
-import Title from './Components/Title'
-import Acheivements from './Components/Acheivements'
-import TechStack from './Components/TechStack'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React, { useState, useEffect } from 'react'
+import { Navigation } from './Components/Navigation'
+import { Hero } from './Components/Hero'
+import { About } from './Components/About'
+import { Services } from './Components/Services'
+import { Projects } from './Components/Projects'
+import { Contact } from './Components/Contact'
+import { Footer } from './Components/Footer'
+import { GlobalStyles } from './Components/Styles'
+import { Toaster } from 'sonner'
 
-function App() {
-
-  useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Check screen width (mobile < 640px)
-  const isMobile = window.innerWidth < 640;
-
-  gsap.utils.toArray('.section').forEach((section) => {
-    if (isMobile) {
-      // On mobile: set fully visible immediately
-      gsap.set(section, { opacity: 1, y: 0 });
-    } else {
-      // On desktop: apply scroll animation
-      gsap.fromTo(
-        section,
-        { opacity: 0, y: 100 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: 'power1.out',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 80%',
-            end: 'bottom 60%',
-            scrub: true,
-          },
-        }
-      );
-    }
-  });
-}, []);
+const App = () => {
+  const [currentYear] = useState(new Date().getFullYear())
 
   return (
-    <div className="scroll-smooth">
-      <div className="section">
-        <Title />
-      </div>
-      <div className="section">
-        <Acheivements />
-      </div>
-      <div className="section">
-        <TechStack />
-      </div>
-      <div className="section">
-        <Projects />
-      </div>
-      <div className="section">
-        <Contact />
-      </div>
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      <GlobalStyles />
+      <Navigation />
+      <Hero currentYear={currentYear} />
+      <About />
+      <Services />
+      <Projects />
+      <Contact currentYear={currentYear} />
+      <Footer currentYear={currentYear} />
+      <Toaster position='top-center' />
     </div>
   )
 }

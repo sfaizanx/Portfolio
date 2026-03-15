@@ -1,97 +1,141 @@
 import React from "react";
-import Header from "./Header";
-import { FaShare } from "react-icons/fa";
-import { DiGithubBadge } from "react-icons/di";
-import Dahz from '../assets/img/Dahz.png'
-import ResumeBuilder from '../assets/img/Resume_Builder.png'
-import Portfoilio from '../assets/img/Portfolio.png'
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-const Projects = () => {
-  const Projects = [
-    {
-      Title: "E-Commerce Platform",
-      TechStacks: "React, .NETAPI, MSSQL",
-      img: Dahz,
-      desc: "Full Featured Online Market Place with Payment Integration",
-      Link: "https://thedahz.com",
-      Code: "https://github.com/sfaizanx",
-    },
-    {
-      Title: "AI Resume Builder",
-      TechStacks: "React, NodeJS, MONGODB",
-      img: ResumeBuilder,
-      desc: "Smart Resume Builder with AI Integration with ATS Verified Templates",
-      Link: "https://aismartresume.vercel.app",
-      Code: "https://github.com/sfaizanx",
-    },
-    {
-      Title: "Portfolio",
-      TechStacks: "React, TailwindCSS",
-      img: Portfoilio,
-      desc: "Portfoilo website that makes clear to clients and Views about yourself",
-      Link: "https://faizan-portfolio-chi.vercel.app/",
-      Code: "https://github.com/sfaizanx",
-    },
-  ];
+import Dahz from "../assets/img/Dahz.png";
+import ResumeBuilder from "../assets/img/Resume_Builder.png";
+import Portfolio from "../assets/img/Portfolio.png";
 
+const PROJECTS = [
+  {
+    number: "01",
+    Title: "E-Commerce Platform",
+    year: "2024",
+    type: "Web Application",
+    TechStacks: ["Shopify"],
+    img: Dahz,
+    desc: "Full Featured Online Market Place with Payment Integration",
+    Link: "https://thedahz.com",
+    Code: "https://github.com/sfaizanx",
+  },
+  {
+    number: "02",
+    Title: "AI Resume Builder",
+    year: "2024",
+    type: "Web Application",
+    TechStacks: ["React", "NodeJS", "MongoDB"],
+    img: ResumeBuilder,
+    desc: "Smart Resume Builder with AI Integration with ATS Verified Templates",
+    Link: "https://aismartresume.vercel.app",
+    Code: "https://github.com/sfaizanx",
+  },
+  {
+    number: "03",
+    Title: "Portfolio",
+    year: "2024",
+    type: "Frontend Development",
+    TechStacks: ["React", "TailwindCSS"],
+    img: Portfolio,
+    desc: "Portfolio website that clearly presents your work and skills to clients.",
+    Link: "https://buildbyfaizan.vercel.app/",
+    Code: "https://github.com/sfaizanx",
+  },
+];
+
+export const Projects = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-4 py-20 sm:py-28 md:py-32">
-  <Header title="PROJECTS" />
-
-  <div className="flex flex-wrap justify-center gap-6 mt-5 w-full">
-    {Projects.map((item, idx) => (
-      <div
-        key={idx}
-        className="border rounded-2xl overflow-hidden w-full sm:w-[300px] md:w-[350px] lg:w-[380px] transition-all duration-500 hover:shadow-2xl"
-      >
-        {/* Project Image */}
-        <img
-          src={item.img}
-          alt={item.Title}
-          className="rounded-t-2xl w-full h-48 sm:h-52 md:h-56 lg:h-60 object-cover"
-        />
-
-        {/* Project Details */}
-        <div className="bg-black rounded-b-2xl p-5 sm:p-6 text-white flex flex-col">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-extrabold">
-            {item.Title}
+    <section id="work" className="py-32 px-8 bg-black">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-24">
+          <h2 className="space-grotesk text-4xl md:text-6xl font-bold text-white mb-8">
+            SELECTED WORK
           </h2>
 
-          <p className="text-sm sm:text-base font-bold tracking-widest mt-1">
-            {item.TechStacks}
+          <p className="text-gray-400 text-lg max-w-2xl">
+            A showcase of my recent projects including full-stack
+            applications, APIs, and modern web experiences.
           </p>
+        </div>
 
-          <p className="text-sm sm:text-base font-medium my-2">
-            {item.desc}
-          </p>
-
-          {/* Links */}
-          <div className="flex flex-wrap gap-2 mt-2">
-            <a
-              href={item.Link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-white p-2 rounded hover:bg-white/10 transition"
+        <div className="space-y-32">
+          {PROJECTS.map((project) => (
+            <div
+              key={project.Title}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-8 group"
             >
-              <FaShare /> Live Demo
-            </a>
+              {/* LEFT SIDE */}
+              <div className="lg:col-span-6 space-y-6">
+                <div className="flex items-center space-x-4">
+                  <span className="text-gray-600 text-sm font-mono">
+                    {project.number}
+                  </span>
 
-            <a
-              href={item.Code}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-white p-2 rounded hover:bg-white/10 transition"
-            >
-              <DiGithubBadge size={20} /> Code
-            </a>
-          </div>
+                  <span className="text-gray-600 text-sm">
+                    {project.year}
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="space-grotesk text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-gray-300 transition-colors">
+                    {project.Title}
+                  </h3>
+
+                  <div className="text-gray-500 text-sm mb-4">
+                    {project.type}
+                  </div>
+
+                  <p className="text-gray-400 leading-relaxed mb-6">
+                    {project.desc}
+                  </p>
+
+                  {/* TECH STACK */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {project.TechStacks.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-zinc-800 text-gray-400 text-xs"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* BUTTONS */}
+                  <div className="flex gap-6">
+                    <a
+                      href={project.Link}
+                      target="_blank"
+                      className="text-white hover:text-gray-400 transition-colors flex items-center gap-2"
+                    >
+                      View Project
+                      <FaExternalLinkAlt />
+                    </a>
+
+                    <a
+                      href={project.Code}
+                      target="_blank"
+                      className="text-white hover:text-gray-400 transition-colors flex items-center gap-2"
+                    >
+                      Code
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* RIGHT SIDE IMAGE */}
+              <div className="lg:col-span-6">
+                <div className="overflow-hidden border border-zinc-800">
+                  <img
+                    src={project.img}
+                    alt={project.Title}
+                    className="w-full h-80 object-cover object-top hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-
+    </section>
   );
 };
-
-export default Projects;

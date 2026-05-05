@@ -34,7 +34,7 @@ const PROJECTS = [
     Title: "Share It",
     year: "2026",
     type: "Frontend Development",
-    TechStacks: ["React", "TailwindCSS", "NodeJs, WebSocket],
+    TechStacks: ["React", "TailwindCSS", "NodeJs", "WebSocket"],
     img: ShareIt,
     desc: "A Platform allows to share resource over this website and make sharing easy and safe.",
     Link: "https://share-it-io.vercel.app/",

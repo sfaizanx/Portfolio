@@ -4,6 +4,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Dahz from "../assets/img/Dahz.png";
 import ResumeBuilder from "../assets/img/Resume_Builder.png";
 import Portfolio from "../assets/img/Portfolio.png";
+import ShareIt from "../assets/img/ShareIt.png";
 
 const PROJECTS = [
   {
@@ -20,7 +21,7 @@ const PROJECTS = [
   {
     number: "02",
     Title: "AI Resume Builder",
-    year: "2024",
+    year: "2025",
     type: "Web Application",
     TechStacks: ["React", "NodeJS", "MongoDB"],
     img: ResumeBuilder,
@@ -29,9 +30,20 @@ const PROJECTS = [
     Code: "https://github.com/sfaizanx",
   },
   {
-    number: "03",
+    number: "04",
+    Title: "Share It",
+    year: "2026",
+    type: "Frontend Development",
+    TechStacks: ["React", "TailwindCSS", "NodeJs, WebSocket],
+    img: ShareIt,
+    desc: "A Platform allows to share resource over this website and make sharing easy and safe.",
+    Link: "https://share-it-io.vercel.app/",
+    Code: "https://github.com/sfaizanx",
+  },
+  {
+    number: "04",
     Title: "Portfolio",
-    year: "2024",
+    year: "2026",
     type: "Frontend Development",
     TechStacks: ["React", "TailwindCSS"],
     img: Portfolio,
